@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Clinica de estetica">
-    <meta name="keywords" content="Aesthetic, Estetica, Clinica em Maputo, html">
+    <meta name="description" content="Clinica de Pre-pos">
+    <meta name="keywords" content="Aesthetic, Pre-pos, Clinica em Maputo, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Clinica Estetica</title>
+    <title>Clinica Pre-pos</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
@@ -25,7 +25,42 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
     <style>
+        .dropdown.menu {
+            display: flex;
+            background-color: white !important;
+            width: auto !important;
+            padding: 2rem !important;
+            border: 1px solid #b5ccc2;
+            left: -500px !important;
+        }
 
+        .menu li {
+            padding: 4px 10px 4px 10px;
+            margin-right: 45px !important;
+            width: 300px;
+        }
+
+        .menu li span {
+            color: #777777;
+            font-weight: 600;
+        }
+
+        .dropdown-sec li a {
+            color: #777777 !important;
+            padding: 0px !important;
+        }
+
+        .dropdown-sec li a:hover {
+            background: #b5ccc2;
+            color: white !important;
+            padding: 5px !important;
+        }
+
+        .header__menu ul li .dropdown li a:hover {
+            background: #b5ccc2;
+            color: white !important;
+            padding: 5px !important;
+        }
     </style>
 </head>
 
@@ -88,30 +123,149 @@
             <div class="row">
                 <div class="col-lg-2">
                     <div class="header__logo p-30">
-                        <a href="./index.html"><span class="logo">ESTÉTICA</span></a>
+                        <a href="./index.html"><span class="logo">Parto</span></a>
                     </div>
                 </div>
                 <div class="col-lg-10">
                     <div class="header__menu__option">
                         <nav class="header__menu">
                             <ul>
-                                <li class="active"><a href="./index.html">Início</a></li>
-                                <li><a href="./about.html">Sobre</a></li>
-                                <li><a href="./services.html">Serviços</a></li>
-                                <li>
-                                    <a href="#" class="arrow">Páginas <span class="dropdown-arrow"></span></a>
+                                <li class="active"><a class="arrow" href="./index.html">O Centro <span
+                                            class="dropdown-arrow"></span></a>
                                     <ul class="dropdown">
-                                        <li><a href="./pricing.html">Preços</a></li>
-                                        <li><a href="./doctor.html">Médico</a></li>
-                                        <li><a href="./blog-details.html">Detalhes do Blog</a></li>
+                                        <li><a href="./pricing.html">O Centro</a></li>
+                                        <li><a href="./doctor.html">A equipas</a></li>
+                                        <li><a href="./blog-details.html">parcearias</a></li>
+                                        <li><a href="./blog-details.html">pedido de Informações</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="./blog.html">Notícias</a></li>
+                                <li><a class="arrow" href="./about.html">Pré Parto <span
+                                            class="dropdown-arrow"></span></a>
+                                    <div class="dt-mega-menu-wrap">
+                                        <ul class="dropdown menu">
+                                            <li>
+                                                <span>Preparação para o Parto</span>
+                                                <ul class="dropdown-sec">
+                                                    <li><a href="#">Workshops</a></li>
+                                                    <li><a href="#">Curso Normal</a></li>
+                                                    <li><a href="#">Curso Intensivo</a></li>
+                                                    <li><a href="#">Curso Específico 2º filho</a></li>
+                                                    <li><a href="#"><strong>Pre Natal Course in English</strong></a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <span>Exercício Físico</span>
+                                                <ul class="dropdown-sec">
+                                                    <li><a href="#">Exercício na Gravidez</a></li>
+                                                    <li><a href="#">Yoga para grávidas</a></li>
+                                                    <li><a href="#">Pilates Clínico</a></li>
+                                                    <li><a href="#">Hidroginástica para grávidas</a></li>
+                                                    <li><a href="#">Treino do pavimento pélvico</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <span>Grupos de Apoio</span>
+                                                <ul class="dropdown-sec">
+                                                    <li><a href="#">Grupo de apoio à amamentação</a></li>
+                                                    <li><a href="#">Conversas com Pais</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <span>Clínica</span>
+                                                <ul class="dropdown-sec">
+                                                    <li><a href="#">Clique aqui para aceder às nossas respostas de
+                                                            Clínica Pré Natal</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a class="arrow" href="./services.html">Pós Parto <span
+                                            class="dropdown-arrow"></span></a>
+                                    <ul class="dropdown menu">
+                                        <li>
+                                            <span>Pós Parto</span>
+                                            <ul class="dropdown-sec">
+                                                <li><a href="#">Actividades pós parto</a></li>
+                                                <li><a href="#">Recuperação Pós Parto</a></li>
+                                                <li><a href="#">Cross Training</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span>Grupos de Apoio</span>
+                                            <ul class="dropdown-sec">
+                                                <li><a href="#">Grupo de apoio à amamentação</a></li>
+                                                <li><a href="#">Conversas com Pais</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span>Clínica</span>
+                                            <ul class="dropdown-sec">
+                                                <li><a href="#">Clique aqui para aceder às nossas respostas de
+                                                        Clínica Pré Natal</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="arrow" href="./services.html">Clinica <span
+                                            class="dropdown-arrow"></span></a>
+                                    <ul class="dropdown menu" style="left: -785px !important;">
+                                        <li>
+                                            <span>Pediatria</span>
+                                            <ul class="dropdown-sec">
+                                                <li><a href="#">Consulta de pediatria</a></li>
+                                                <li><a href="#">Consulta de pediatria pré-natal</a></li>
+                                                <li><a href="#">Consulta de Criança Doente</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span>Clínico / Enfermagem</span>
+                                            <ul class="dropdown-sec">
+                                                <li><a href="#">Consulta de pós-parto</a></li>
+                                                <li><a href="#">Consulta de amamentação</a></li>
+                                                <li><a href="#">Enfermagem ao domicílio</a></li>
+                                                <li><a href="#">Consulta de Medicina Funcional</a></li>
+                                                <li><a href="#">Consulta de Baby Led Weaning (BLW)</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span>Nutrição</span>
+                                            <ul class="dropdown-sec">
+                                                <li><a href="#">Consulta de Nutrição na Gravidez</a>
+                                                </li>
+                                                <li><a href="#">Consulta de Nutrição Pré-Concepção</a></li>
+                                                <li><a href="#">Gravidez – Diabetes Gestacional</a></li>
+                                                <li><a href="#">Consulta de Nutrição no Pós-Parto</a> </li>
+                                                <li><a href="#">Alimentação Complementar (1º ano de vida)</a></li>
+                                                <li><a href="#">Nutrição Infantil</a></li>
+                                                <li><a href="#">Consulta Bebé/Criança com Síndrome de Down</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span>Fisioterapia</span>
+                                            <ul class="dropdown-sec">
+                                                <li><a href="#">Avaliação do períneo na gravidez</a>
+                                                </li>
+                                                <li><a href="#">Avaliação do períneo no pós-parto</a>
+                                                </li>
+                                                <li><a href="#">Reabilitação do Períneo</a></li>
+                                                <li><a href="#">Drenagem linfática na gravidez</a></li>
+                                                <li><a href="#">Drenagem linfática no pós-parto</a></li>
+                                                <li><a href="#">Fisioterapia Respiratória (cinesiterapia)</a></li>
+                                                <li><a href="#">Massagem da cicatriz após cesariana</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
                                 <li><a href="./contact.html">Contacto</a></li>
                             </ul>
                         </nav>
                         <div class="header__btn">
-                            <a href="#" class="primary-btn">Agendar</a>
+                            <a href="#" class="primary-btn"> <i class="fa fa-lock"></i> Área reservada</a>
                         </div>
                     </div>
                 </div>
@@ -128,17 +282,18 @@
     <section class="hero spad set-bg" data-setbg="img/hero-bg.jpg">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 mt-4">
                     <div class="hero__text">
-                        <span>Tratamentos de qualidade mundial</span>
-                        <h2>Receba o melhor tratamento com a melhor qualidade</h2>
-                        <a href="#" class="primary-btn normal-btn">Contacte-nos</a>
+                        <span>Preparação para uma nova jornada</span>
+                        <h2>Participe dos nossos cursos de Preparação pré e pós-parto</h2>
+                        <a href="#" class="primary-btn normal-btn">Saiba Mais</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Hero Section End -->
+
 
     <!-- Consultation Section Begin -->
     <section class="consultation">
@@ -147,24 +302,23 @@
                 <div class="col-lg-4">
                     <div class="consultation__form">
                         <div class="section-title">
-                            <span>Solicite sua</span>
-                            <h2>Consulta</h2>
+                            <span>Inscreva-se no</span>
+                            <h2>Curso</h2>
                         </div>
                         <form action="#">
                             <input type="text" placeholder="Nome">
                             <input type="email" placeholder="Email">
                             <div class="datepicker__item">
-                                <input type="text" placeholder="Data" class="datepicker">
+                                <input type="text" placeholder="Data Preferida" class="datepicker">
                                 <i class="fa fa-calendar"></i>
                             </div>
                             <select>
-                                <option value="">Tipo de serviço</option>
-                                <option value="">Equipamentos avançados</option>
-                                <option value="">Médicos qualificados</option>
-                                <option value="">Serviços certificados</option>
-                                <option value="">Atendimento de emergência</option>
+                                <option value="">Selecione o Curso</option>
+                                <option value="pre-parto">Curso de Pré-Parto</option>
+                                <option value="pos-parto">Curso de Pós-Parto</option>
+                                <option value="pre-pos-parto">Pacote Completo: Pré e Pós-Parto</option>
                             </select>
-                            <button type="submit" class="site-btn">Agendar consulta</button>
+                            <button type="submit" class="site-btn">Inscrever-se</button>
                         </form>
                     </div>
                 </div>
@@ -174,14 +328,12 @@
                             <div class="col-lg-6 col-md-6">
                                 <div class="consultation__text__item">
                                     <div class="section-title">
-                                        <span>Bem-vindo à Estética</span>
-                                        <h2>Encontre os melhores médicos com <b>ESTÉTICA</b></h2>
+                                        <span>Bem-vindo à sua Jornada</span>
+                                        <h2>Prepare-se com nossos <b>Cursos</b></h2>
                                     </div>
-                                    <p>30 anos de experiência em Cirurgia Estética. Lorem ipsum dolor sit amet,
-                                        consectetur
-                                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                        aliqua.
-                                    </p>
+                                    <p>Tenha o apoio necessário antes e depois da chegada do seu bebê. Oferecemos
+                                        conteúdos
+                                        completos com especialistas experientes em cuidados maternos e infantis.</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
@@ -198,68 +350,180 @@
     </section>
     <!-- Consultation Section End -->
 
-    <!-- Início da Secção de Serviços -->
+    <!-- Início da Secção do Blog -->
     <section class="testimonials spad">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-md-8 col-sm-6">
+                <div class="col-lg-12 text-center">
                     <div class="section-title">
-                        <span>Nossos Serviços</span>
-                        <h2>Ofertas para você</h2>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="services__btn">
-                        <a href="#" class="primary-btn">Contacte-nos</a>
+                        <span>Nossos Cursos</span>
+                        <h2>Cursos em destaque</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="services__item">
-                        <div class="services__item__icon">
-                            <span><img src="img/icons/ci2-1.png" alt=""></span>
+                <!-- Curso 1 -->
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="img/blog/blog-4.jpg" alt="Curso de Pré-Parto">
                         </div>
-                        <div class="services__item__text">
-                            <h5>Procedimentos Corporais</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor aliqua.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="services__item">
-                        <div class="services__item__icon">
-                            <span><img src="img/icons/doctor.png" alt=""></span>
-                        </div>
-                        <div class="services__item__text">
-                            <h5>Procedimentos Faciais</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor aliqua.
-                            </p>
+                        <div class="blog__item__text">
+                            <h5><a href="#">Curso de primeiros socorros pediátricos</a></h5>
+                            <p>Descubra como se preparar física e emocionalmente para o parto. Inclui técnicas de
+                                respiração, exercícios e cuidados com a saúde.</p>
+                            <ul>
+                                <li><img src="img/blog/blog-author.jpg" alt="Instrutor"> Dra. Ana Silva</li>
+                                <li>Próxima Turma: 10/02/2025</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="services__item">
-                        <div class="services__item__icon">
-                            <span><img src="img/icons/pregnat.png" alt=""></span>
+                <!-- Curso 2 -->
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="img/blog/blog-5.jpg" alt="Curso de Pós-Parto">
                         </div>
-                        <div class="services__item__text">
-                            <h5>Procedimentos Mamários</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor aliqua.
-                            </p>
+                        <div class="blog__item__text">
+                            <h5><a href="#">Curso de Pós-Parto: Cuidados com o bebê e recuperação</a></h5>
+                            <p>Aprenda sobre amamentação, cuidados com o recém-nascido, recuperação pós-parto e como
+                                lidar
+                                com os desafios iniciais.</p>
+                            <ul>
+                                <li><img src="img/blog/blog-author.jpg" alt="Instrutor"> Enf. Carlos Mendes</li>
+                                <li>Próxima Turma: 17/02/2025</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="services__item">
-                        <div class="services__item__icon">
-                            <span><img src="img/icons/pregnat kids.png" alt=""></span>
+                <!-- Curso 3 -->
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="img/blog/blog-6.jpg" alt="Curso Completo Pré e Pós-Parto">
                         </div>
-                        <div class="services__item__text">
-                            <h5>Cuidado da Pele & Beleza</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor aliqua.
-                            </p>
+                        <div class="blog__item__text">
+                            <h5><a href="#">Curso de introdução alimentar participativa e BLW</a></h5>
+                            <p>Tenha acesso ao conteúdo completo, desde a preparação para o parto até o acompanhamento
+                                do
+                                bebê nos primeiros meses.</p>
+                            <ul>
+                                <li><img src="img/blog/blog-author.jpg" alt="Instrutor"> Equipe Especializada</li>
+                                <li>Próxima Turma: 24/02/2025</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Botão Carregar Mais -->
+                <div class="col-lg-12 text-center">
+                    <div class="load__more">
+                        <a href="#" class="primary-btn">Ver Mais Cursos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fim da Secção do Blog -->
+
+    <!-- Chooseus Section Begin -->
+    <section class="chooseus spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-title">
+                        <span>Por que nos escolher?</span>
+                        <h2>Excelência em Pré e Pós-Parto</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="chooseus__item">
+                        <img src="img/icons/ci-1.png" alt="">
+                        <h5>Suporte Especializado</h5>
+                        <p>Nossos profissionais têm experiência para orientar você em cada etapa do pré e pós-parto.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="chooseus__item">
+                        <img src="img/icons/ci-2.png" alt="">
+                        <h5>Conteúdo Personalizado</h5>
+                        <p>Oferecemos cursos adaptados às suas necessidades, com foco em conforto e segurança.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="chooseus__item">
+                        <img src="img/icons/ci-3.png" alt="">
+                        <h5>Rede de Apoio</h5>
+                        <p>Faça parte de uma comunidade de mães para compartilhar experiências e receber suporte.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="chooseus__item">
+                        <img src="img/icons/ci-4.png" alt="">
+                        <h5>Ambiente de Confiança</h5>
+                        <p>Criamos um espaço acolhedor para você se sentir à vontade em sua jornada como mãe.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Chooseus Section End -->
+
+    <!-- Início da Secção de Serviços -->
+    <section class="testimonials spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="consultation__text p-0">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <div class="consultation__video set-bg" data-setbg="img/gallery/gallery-4.jpg"
+                                    style="background-image: url(&quot;img/clinica.jpg&quot;); height: 27rem;">
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-8 d-flex">
+                                <div class="consultation__text__item align-content-center">
+                                    <div class="section-title mb-2">
+                                        <span>Bem-vindo à sua Jornada</span>
+                                        <h2>Conheça também a nossa clínica</h2>
+                                    </div>
+                                    <p>O Centro Pré e Pós-Parto conta com uma clínica especializada, equipada com uma
+                                        equipa multidisciplinar.</p>
+                                    <div class="section-title mb-0 mt-4">
+                                        <span>Nossos Serviços</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                            <ul class="services__details__feature">
+                                                <li><i class="fa fa-check-circle"></i> Aulas de preparação para o parto
+                                                </li>
+                                                <li><i class="fa fa-check-circle"></i> Consultas com especialistas em
+                                                    pré-natal</li>
+                                                <li><i class="fa fa-check-circle"></i> Acompanhamento pós-parto
+                                                    personalizado</li>
+                                                <li><i class="fa fa-check-circle"></i> Orientação em amamentação</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                            <ul class="services__details__feature">
+                                                <li><i class="fa fa-check-circle"></i> Suporte emocional para mães</li>
+                                                <li><i class="fa fa-check-circle"></i> Grupos de apoio para pais e
+                                                    cuidadores</li>
+                                                <li><i class="fa fa-check-circle"></i> Workshops sobre cuidados com o
+                                                    bebé</li>
+                                                <li><i class="fa fa-check-circle"></i> Exercícios físicos para gestantes
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="load__more">
+                                        <a href="#" class="primary-btn">Mais Informações</a>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -269,122 +533,6 @@
     <!-- Fim da Secção de Serviços -->
 
 
-    <!-- Chooseus Section Begin -->
-    <section class="chooseus spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="section-title">
-                        <span>Por que nos escolher?</span>
-                        <h2>Oferecemos para você</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="chooseus__item">
-                        <img src="img/icons/ci-1.png" alt="">
-                        <h5>Equipamentos avançados</h5>
-                        <p>Lorem ipsum amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt facilisis.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="chooseus__item">
-                        <img src="img/icons/ci-2.png" alt="">
-                        <h5>Médicos qualificados</h5>
-                        <p>Lorem ipsum amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt facilisis.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="chooseus__item">
-                        <img src="img/icons/ci-3.png" alt="">
-                        <h5>Serviços certificados</h5>
-                        <p>Lorem ipsum amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt facilisis.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="chooseus__item">
-                        <img src="img/icons/ci-4.png" alt="">
-                        <h5>Atendimento de emergência</h5>
-                        <p>Lorem ipsum amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt facilisis.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Chooseus Section End -->
-
-
-
-    <!-- Início da Secção do Blog -->
-    <section class="testimonials spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="section-title">
-                        <span>Nosso Time</span>
-                        <h2>Nossos Médicos Especialistas</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="blog__item">
-                        <div class="blog__item__pic">
-                            <img src="img/blog/blog-4.jpg" alt="">
-                        </div>
-                        <div class="blog__item__text">
-                            <h5><a href="#">Veja como obter um brilho natural nesta temporada de festas</a></h5>
-                            <ul>
-                                <li><img src="img/blog/blog-author.jpg" alt=""> John Doe</li>
-                                <li>06 de Dezembro, 2019</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="blog__item">
-                        <div class="blog__item__pic">
-                            <img src="img/blog/blog-5.jpg" alt="">
-                        </div>
-                        <div class="blog__item__text">
-                            <h5><a href="#">Melhore sua pele com estas 10 dicas principais de cuidados com a pele</a>
-                            </h5>
-                            <ul>
-                                <li><img src="img/blog/blog-author.jpg" alt=""> John Doe</li>
-                                <li>06 de Dezembro, 2019</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="blog__item">
-                        <div class="blog__item__pic">
-                            <img src="img/blog/blog-6.jpg" alt="">
-                        </div>
-                        <div class="blog__item__text">
-                            <h5><a href="#">8 Maneiras de Proteger Sua Pele ao Fazer Exercícios ao Ar Livre Neste
-                                    Inverno</a></h5>
-                            <ul>
-                                <li><img src="img/blog/blog-author.jpg" alt=""> John Doe</li>
-                                <li>06 de Dezembro, 2019</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12 text-center">
-                    <div class="load__more">
-                        <a href="#" class="primary-btn">Carregar Mais</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Fim da Secção do Blog -->
 
 
     <!-- Gallery Begin -->
@@ -422,7 +570,7 @@
                 <div class="col-lg-12 text-center">
                     <div class="section-title">
                         <span>Testemunhos</span>
-                        <h2>Clientes Satisfeitos</h2>
+                        <h2>O que dizem sobre nós</h2>
                     </div>
                 </div>
             </div>
@@ -463,8 +611,10 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="section-title">
-                        <span>Calendário</span>
-                        <h2>Atividades - Novembro 2024</h2>
+                        <span>
+                            Cursos, workshops e atividades mensais
+                        </span>
+                        <h2>A nossa agenda - Novembro 2024</h2>
                     </div>
                 </div>
             </div>
@@ -570,7 +720,7 @@
                         </li>
                         <li><span class="date">30</span>
                             <a href="#" class="meeting">
-                                <b>Encerramento:</b> Black Friday Estética
+                                <b>Encerramento:</b> Black Friday Pre-pos
                             </a>
                         </li>
                         <li><span class="date">31</span></li>
@@ -597,7 +747,7 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-4">
                         <div class="footer__logo">
-                            <a href="#"><span class="logo" style="color: white;">ESTÉTICA</span></a>
+                            <a href="#"><span class="logo" style="color: white;">Parto</span></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-8">
