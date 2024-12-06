@@ -77,6 +77,27 @@ ol {
     margin: 0;
 }
 
+.mt-8 {
+    margin-top: 9rem;
+}
+
+.float-whatsap {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 27px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+
+
 /*---------------------
   Helper CSS
 -----------------------*/
@@ -90,7 +111,7 @@ ol {
     color: #888888;
     font-weight: 500;
     letter-spacing: 2px;
-    text-transform: uppercase;
+    text-transform: none;
 }
 
 .section-title h2 {
@@ -130,29 +151,28 @@ ol {
     font-size: 15px;
     font-weight: 500;
     padding: 12px 30px 10px;
-    text-transform: uppercase;
     color: #fff;
-    text-transform: uppercase;
+    text-transform: none;
     letter-spacing: 2px;
     border-radius: 5px;
-    background-color: #b5ccc2;
-    border: 2px solid #b5ccc2;
+    background-color: #d6a294;
+    border: 2px solid #d6a294;
 }
 
 .primary-btn:hover {
-    color: #b5ccc2 !important;
+    color: #d6a294 !important;
     background-color: transparent !important;
-    border: 2px solid #b5ccc2;
+    border: 2px solid #d6a294;
 }
 
 .site-btn:hover {
-    color: #b5ccc2 !important;
+    color: #d6a294 !important;
     background-color: transparent !important;
-    border: 2px solid #b5ccc2;
+    border: 2px solid #d6a294;
 }
 
 .primary-btn.normal-btn {
-    background: #b5ccc2;
+    background: #d6a294;
     color: #ffffff;
     font-weight: 600;
 }
@@ -160,12 +180,12 @@ ol {
 .site-btn {
     font-size: 15px;
     color: #ffffff;
-    background: #b5ccc2;
+    background: #d6a294;
     font-weight: 600;
-    border: 2px solid #b5ccc2;
+    border: 2px solid #d6a294;
     border-radius: 5px;
     display: inline-block;
-    text-transform: uppercase;
+    text-transform: none;
     letter-spacing: 2px;
     padding: 14px 30px 12px;
 }
@@ -247,6 +267,7 @@ ol {
     width: 100%;
     z-index: 1000;
     background-color: white;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, .15);
 }
 
 .header.header--normal {
@@ -254,7 +275,7 @@ ol {
 }
 
 .header__top {
-    background: #3c3c3b;
+    background: #808080;
 }
 
 .header__top__left {
@@ -295,7 +316,7 @@ ol {
 }
 
 .header__logo {
-    padding: 42px 0;
+    padding: 14px 30px 20px 30px !important;
 }
 
 .header__logo a {
@@ -303,8 +324,11 @@ ol {
 }
 
 .header__menu__option {
-    text-align: right;
+    /* text-align: right; */
     padding: 30px 0;
+    align-items: center;
+    align-content: center;
+    display: flex;
 }
 
 .header__menu {
@@ -355,7 +379,7 @@ ol {
     -webkit-transition: all, 0.3s;
     -o-transition: all, 0.3s;
     transition: all, 0.3s;
-    border: 1px solid #b5ccc2;
+    border: 1px solid #d6a294;
 }
 
 .header__menu ul li .dropdown li {
@@ -398,6 +422,13 @@ ol {
     -webkit-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0);
+}
+
+.header__menu ul li .primary-btn {
+    text-transform: none;
+    font-size: 12px;
+    padding: 10px 20px 10px 20px;
+    color: white;
 }
 
 /* Estilo do link */
@@ -455,25 +486,109 @@ ol {
 -----------------------*/
 
 .hero {
-    padding-top: 200px;
-    padding-bottom: 215px;
+    /* padding-top: 200px;
+    padding-bottom: 215px; */
+    height: 22rem;
 }
 
 .hero__text span {
     font-size: 15px;
     font-weight: 800;
     color: #ffffff;
-    text-transform: uppercase;
+    text-transform: none;
     display: block;
 }
 
 .hero__text h2 {
     font-size: 48px;
-    color: #ffffff;
+    color: #808080;
     font-weight: 700;
     line-height: 60px;
     margin-top: 10px;
     margin-bottom: 35px;
+}
+
+.hero__text h2 b {
+    color: #d6a294;
+
+}
+
+/* BANNER  */
+
+.banner-1 {
+    padding: 175px;
+    margin: 1rem;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    /* Necessário para posicionar o texto e o botão dentro do banner */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+.banner-2 {
+    padding: 100px;
+    margin: 1rem;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    /* Necessário para posicionar o texto e o botão dentro do banner */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.banner-1::after,
+.banner-2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    /* Adiciona uma sobreposição para destacar o texto e o botão */
+    border-radius: 20px;
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 2;
+    width: 72%;
+}
+
+.banner-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #d6a294;
+    /* Cor do botão */
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    z-index: 2;
+    transition: background-color 0.3s;
+}
+
+.banner-btn:hover {
+    background-color: transparent;
+    border: 1px solid #d6a294;
+    color: #fff;
+    /* Efeito hover no botão */
 }
 
 /*---------------------
@@ -623,6 +738,11 @@ ol {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-shadow: 0px 5px 15px rgba(0, 61, 85, 0.07);
+    box-shadow: 0px 5px 15px rgba(0, 61, 85, 0.07);
+    -webkit-transition: all, 0.5s;
+    -o-transition: all, 0.5s;
+    transition: all, 0.5s;
 }
 
 .consultation__video .play-btn {
@@ -963,7 +1083,7 @@ ol {
 -----------------------*/
 
 .footer {
-    background: #121c1d;
+    background: #404040;
     padding-top: 40px;
 }
 
@@ -1063,8 +1183,8 @@ ol {
 
 .footer__widget ul li a {
     font-size: 14px;
-    color: #c4c4c4;
-    font-weight: 300;
+    color: #fff;
+    font-weight: 400;
 }
 
 .footer__address {
@@ -1081,7 +1201,7 @@ ol {
 .footer__address ul li {
     list-style: none;
     font-size: 14px;
-    color: #c4c4c4;
+    color: #ffff;
     font-weight: 300;
     margin-bottom: 38px;
 }
@@ -1106,7 +1226,7 @@ ol {
 }
 
 .footer__copyright {
-    background: #12191a;
+    background: #808080;
     padding: 25px 0 20px;
     margin-top: 30px;
 }
@@ -1119,7 +1239,7 @@ ol {
     list-style: none;
     display: inline-block;
     font-size: 14px;
-    color: #c4c4c4;
+    color: #ffff;
     margin-right: 25px;
     font-weight: 300;
     position: relative;
@@ -1131,7 +1251,7 @@ ol {
     top: 9px;
     height: 4px;
     width: 4px;
-    background: #c4c4c4;
+    background: #fff;
     content: "";
     border-radius: 50%;
 }
@@ -1146,7 +1266,7 @@ ol {
 
 .footer__copyright__text p {
     font-size: 14px;
-    color: #c4c4c4;
+    color: #ffff;
     font-weight: 300;
     margin-bottom: 0;
 }
@@ -1171,7 +1291,7 @@ ol {
 .breadcrumb__text h2 {
     color: #ffffff;
     font-weight: 700;
-    text-transform: uppercase;
+    text-transform: none;
     margin-bottom: 10px;
 }
 
@@ -1273,8 +1393,9 @@ ol {
 
 .testimonials {
     overflow: hidden;
-    background: #f2f7f8;
+    background: #fff;
     padding-bottom: 90px;
+    padding-top: 90px;
 }
 
 .testimonials .section-title {
@@ -1761,7 +1882,7 @@ ol {
 .pricing__item__title p {
     color: #777777;
     font-weight: 600;
-    text-transform: uppercase;
+    text-transform: none;
     margin-bottom: 10px;
     -webkit-transition: all, 0.3s;
     -o-transition: all, 0.3s;
@@ -1828,7 +1949,7 @@ ol {
     color: #777777;
     font-size: 15px;
     font-weight: 500;
-    text-transform: uppercase;
+    text-transform: none;
     display: block;
     margin-bottom: 6px;
 }
@@ -2409,7 +2530,7 @@ ol {
 
 @media only screen and (min-width: 1200px) {
     .container {
-        max-width: 1170px;
+        max-width: calc(1300px);
     }
 }
 
@@ -3062,7 +3183,7 @@ ul.days {
     border-bottom: 1px solid #ccc;
     font-weight: 600;
     padding: 4px 4px 4px 8px;
-    text-transform: uppercase;
+    text-transform: none;
     font-size: 13px;
     text-align: center;
 }
